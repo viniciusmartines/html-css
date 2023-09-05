@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            text-align: center;
+            box-shadow: 5px 6px 6px 1px rgba(0, 0, 0, 0.377);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            font-style: italic;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 20px 20px 20px;
+            box-shadow: 6px 7px 8px 1px rgba(0, 0, 0, 0.329);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(146, 146, 146);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 1px;
+            text-align:center;
+            margin: 0px;
+        }
+
+        section#assuntos {
+            font-size: 20px;
+        }
+
+        footer > p {
+            margin: 4px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: lightgreen;
+            margin: 15px;
+        }
+        p#teste {
+            margin: 0px;
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae veniam, labore dolorum ratione fugit illum animi consequatur inventore eaque quaerat sed obcaecati laudantium iusto voluptatum hic dolores! Accusantium, aspernatur itaque?</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+            
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Vinícius</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+    <p id="teste">TESTTE</p>
+</body>
+</html>
