@@ -12,6 +12,20 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: darkslategray;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         td, th {
@@ -20,27 +34,36 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: darkslategray;
             color: white;
         }
 
         .numero {
             text-align: right;
         }
+
+        #population {
+            width: 140px;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado
-                <th>População (2022)
+                <th scope="col">Estado
+                <th scope="col" id="population">População (2022)
             </tr>
         </thead>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>203.062.512</strong></td>
             </tr>
         </tfoot>
@@ -155,5 +178,9 @@
             </tr>
         </tbody>
     </table>
+    <p style="width: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem architecto omnis rerum nam illo maxime deleniti natus quasi, fuga nobis velit, adipisci fugiat vitae officiis doloremque pariatur error similique. Debitis.</p>
+    <p style="width: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem architecto omnis rerum nam illo maxime deleniti natus quasi, fuga nobis velit, adipisci fugiat vitae officiis doloremque pariatur error similique. Debitis.</p>
+    <p style="width: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem architecto omnis rerum nam illo maxime deleniti natus quasi, fuga nobis velit, adipisci fugiat vitae officiis doloremque pariatur error similique. Debitis.</p>
+    <p style="width: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem architecto omnis rerum nam illo maxime deleniti natus quasi, fuga nobis velit, adipisci fugiat vitae officiis doloremque pariatur error similique. Debitis.</p>
 </body>
 </html>
