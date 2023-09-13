@@ -2,6 +2,74 @@
 
 /* All other media */
 
-@media print {
+/* Typical Device Breakpoints
+Smalls screens: up to 600px
+Smartphones: 600px to 768px
+Tablets: 768px to 992px
+Desktop: 992px to 1200px
+Large screens: above 1200px
+*/
+
+@media print { /* print */
+    body {
+        background-image: url('../imagens/back-print.jpg');
+    }
+
+    main h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    main {
+        width: 85vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'This print was made via the website www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: block; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+@media screen and (min-width: 768px) { /* Tablets */
+    body {
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+@media screen and (min-width: 992px) { /* Desktop */
+    body {
+        background-image: url('../imagens/back-pc.jpg');
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: block; }
+    img#tv { display: none; }
+}
+
+@media screen and (min-width: 1200px) { /* Large screens */
+    body {
+        background-image: url('../imagens/back-tv.jpg');
+    }
     
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; }
 }
