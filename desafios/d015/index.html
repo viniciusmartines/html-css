@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -16,8 +17,21 @@
             <div id="form">
                 <h1>Login</h1>
                 <p>Welcome again. Log in to access your account and be able to make settings in your environment</p>
-                <form action="login.php" method="post">
-
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="field">
+                        <span class="material-icons">person</span>
+                        <input type="email" name="logi" id="logi" placeholder="Your e-mail" autocomplete="email" required maxlength="30">
+                        <label for="logi">Login</label>
+                    </div>
+                    <div class="field">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="passw" id="passw" placeholder="Your password" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="passw">Password</span></label>
+                    </div>
+                    <input type="submit" value="Submit">
+                    <a href="forget.html">
+                        Forgot the password <span class="material-icons">mail</span>
+                    </a>
                 </form>
             </div>
         </section>
